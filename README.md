@@ -24,25 +24,25 @@ Olá, sejam bem-vindos! Neste repositório foi construído um CRUD simples usand
     <summary>Clique para expandir</summary>
     <br>
 
-Clone o projeto
+- Clone o projeto
 
 ```bash
   git clone git@github.com:Joaogustavo789/teste-tecnico-brainy.git
 ```
 
-Entre no diretório do projeto
+- Entre no diretório do projeto
 
 ```bash
   cd teste-tecnico-brainy
 ```
 
-Instale as dependências
+- Instale as dependências
 
 ```bash
   composer install
 ```
 
-Inicie o servidor
+- Inicie o servidor
 
 ```bash
   php artisan serve
@@ -63,6 +63,24 @@ DB_DATABASE=nome_do_banco_de_dados
 DB_USERNAME=usuário
 DB_PASSWORD=senha_do_banco_de_dados
 ```
+</details>
+
+## Pré-Populando o Banco de Dados
+
+<details>
+    <summary>Clique para expandir</summary>
+    
+ ### Para pré-popular o banco de dados, é necessário executar as migrations e as seeders.
+ 
+ - Para executar as migrations, basta rodar o seguinte comando:
+ ```bash
+    php artisan migrate
+ ```
+  
+ - Para executar as seeders, basta rodar o seguinte comando:
+ ```bash
+    php artisan db:seed
+ ```
 </details>
     
 ## Documentação
