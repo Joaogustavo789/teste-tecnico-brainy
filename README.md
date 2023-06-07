@@ -13,7 +13,7 @@ Olá, sejam bem-vindos! Neste repositório foi construído um CRUD simples usand
       </td>
       <td width="80px" align="center">
         <span><strong>Laravel</strong></span><br>
-        <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain-wordmark.svg">
+        <img height="45" src="https://laravel.com/img/logomark.min.svg">
       </td>
     </tr>
   </tbody>
