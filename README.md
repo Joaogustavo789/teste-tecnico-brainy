@@ -22,7 +22,8 @@ Olá, sejam bem-vindos! Neste repositório foi construído um CRUD simples usand
 ## Rodando localmente
 <details>
     <summary>Clique para expandir</summary>
-    <br>
+
+  ### É necessário ter o PHP e o Composer instalados em sua maquina!
 
 - Clone o projeto
 
@@ -54,7 +55,7 @@ Olá, sejam bem-vindos! Neste repositório foi construído um CRUD simples usand
     <summary>Clique para expandir</summary>
     <br>
 
-Será necessário renomear o arquivo <strong>.env.example</strong> para <strong>.env</strong> e altere as informações de acordo com suas configurações.
+- Será necessário renomear o arquivo <strong>.env.example</strong> para <strong>.env</strong> e altere as informações de acordo com suas configurações.
 
 ```bash
 DB_HOST=url_da_aplicação
