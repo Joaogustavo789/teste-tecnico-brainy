@@ -8,6 +8,10 @@ Olá, sejam bem-vindos! Neste repositório foi construído um CRUD simples usand
   <tbody>
     <tr valign="top">
       <td width="80px" align="center">
+        <span><strong>MySQL</strong></span><br>
+        <img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+      </td>
+      <td width="80px" align="center">
         <span><strong>PHP</strong></span><br>
         <img height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg">
       </td>
@@ -86,6 +90,7 @@ DB_PASSWORD=senha_do_banco_de_dados
     
 ## Documentação
 
+- [MySQL](https://www.mysql.com/)
 - [PHP](https://www.php.net/)
 - [Laravel](https://laravel.com/)
 - [Composer](https://getcomposer.org/)
