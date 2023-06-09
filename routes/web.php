@@ -19,6 +19,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [UsuarioController::class, 'postUsuario'])->name('home');
 
+Route::post('/usuario/cadastrado', [UsuarioController::class, 'createUsuario'])->name('novoUsuario');
+
 Route::get('/usuarios', [UsuarioController::class, 'getUsuarios'])->name('usuarios');
 
 Route::get('/usuarios/editar/{id}', [UsuarioController::class, 'putUsuario'])->name('editar');

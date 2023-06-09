@@ -23,23 +23,26 @@
       </label>
       <label for="">
         Estado:
-        <select name="" id="">
-          <option value="">Estado 1</option>
-          <option value="">Estado 2</option>
+        <select name="estado" id="id-estado">
+          @foreach ($estados as $estado)
+            <option value="{{ $estado->id }}">{{ $estado->estado }}</option>
+          @endforeach
         </select>
       </label>
       <label for="">
         Cidade:
-        <select name="" id="">
-          <option value="">Cidade 1</option>
-          <option value="">Cidade 2</option>
+        <select name="cidades" id="cidade">
+          @foreach ($cidades as $cidade)
+            <option value="{{ $cidade->id }}">{{ $cidade->cidade }}</option>
+          @endforeach
         </select>
       </label>
       <label for="">
         Hobbie:
         <select name="" id="">
-          <option value="">Hobbie 1</option>
-          <option value="">Hobbie 2</option>
+          @foreach ($hobbies as $hobbie)
+            <option>{{ $hobbie->hobbie }}</option>
+          @endforeach
         </select>
       </label>
     </form>
