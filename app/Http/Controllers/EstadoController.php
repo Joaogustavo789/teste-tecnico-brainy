@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Estado;
 use Illuminate\Http\Request;
 
 class EstadoController extends Controller
 {
     public function getEstados() {
-        return 'EstadoController';
+        // $estados = Estado::all();
+        return view('estados');
     }
 }
