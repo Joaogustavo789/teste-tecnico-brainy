@@ -26,23 +26,21 @@ class UsuarioController extends Controller
     }
 
     public function createUsuario(Request $request) {
-        Usuario::create([
+        $novoUsuario = Usuario::create([
             'nome' => $request->nome_usuario,
             'email' => $request->email_usuario,
             'id_cidade' => $request->cidades,
         ]);
 
-        // Hobbie::create([
-
-        // ]);
-        echo 'Usuário casdastrado com sucesso!'; 
+        return view('cadastrado', [
+            'novoUsuario' => $novoUsuario,
+        ]); 
     }
 
     public function getUsuarios() {
         $usuarios = Usuario::all();
         return view('usuario', [
             'usuarios' => $usuarios,
-            // 'nome' => $usuarios->nome,
         ]);
     }
 
@@ -61,8 +59,7 @@ class UsuarioController extends Controller
 
     public function deleteUsuario($id) {
         $usuario = Usuario::findOrFail($id);
-        return view('excluir', [
-            'usuario' => $usuario,
-        ]);
+        $usuario->delete();
+        return view('excluir');
     }
 }

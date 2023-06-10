@@ -12,7 +12,8 @@
       <a href="{{ route('home') }}">adicionar</a>
       <a href="{{ route('usuarios') }}">listar</a>
     </header>
-    <form action="" method="post">
+    <form action="{{ route('novoUsuario') }}" method="post">
+      @csrf
       <label for="">
         Nome:
         <input type="text" name="nome_usuario">
@@ -45,7 +46,7 @@
           @endforeach
         </select>
       </label>
-      <a href="{{ route('novoUsuario') }}">Enviar cadastro</a>
+      <button type="submit">Enviar cadastro</button>
     </form>
   </main>
 </body>
