@@ -12,7 +12,7 @@
       <h1>Atualizar usuário</h1>
       <a href="{{ route('usuarios') }}">listar</a>
     </header>
-    <form action="{{ route('usuarioAtualizado', ['id' => $usuario->id]) }}" method="post">
+    <form action="{{ route('usuarioAtualizado', $usuario->id) }}" method="post">
       @csrf
       @method("PUT")
       <label for="">
