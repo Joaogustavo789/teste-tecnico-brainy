@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Deletar Usuário</title>
+  <title>Usuário Atualizado</title>
 </head>
 <body>
   <main>
@@ -12,7 +12,7 @@
       <a href="{{ route('home') }}">adicionar</a>
       <a href="{{ route('usuarios') }}">listar</a>
     </header>
-    <h1>Usuário excluido com sucesso!</h1>
+    <p>Usuário <strong>{{ $usuario->nome }}</strong> atualizado com sucesso!</p>
   </main>
 </body>
 </html>

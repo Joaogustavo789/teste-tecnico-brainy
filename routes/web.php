@@ -25,6 +25,8 @@ Route::get('/usuarios', [UsuarioController::class, 'getUsuarios'])->name('usuari
 
 Route::get('/usuarios/editar/{id}', [UsuarioController::class, 'putUsuario'])->name('editar');
 
+Route::put('/usuario/atualizado/{id}', [UsuarioController::class, 'updateUsuario'])->name('usuarioAtualizado');
+
 Route::get('/usuarios/excluir/{id}', [UsuarioController::class, 'deleteUsuario'])->name('excluir');
 
 // Route::get('/', function () {

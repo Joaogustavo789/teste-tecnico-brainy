@@ -12,14 +12,16 @@
       <h1>Atualizar usuário</h1>
       <a href="{{ route('usuarios') }}">listar</a>
     </header>
-    <form action="">
+    <form action="{{ route('usuarioAtualizado', ['id' => $usuario->id]) }}" method="post">
+      @csrf
+      @method("PUT")
       <label for="">
         Nome:
-        <input type="text" name="nome" value="{{ $usuario->nome }}">
+        <input type="text" name="nome_usuario" value="{{ $usuario->nome }}">
       </label>
       <label for="">
         Email:
-        <input type="text" name="nome" value="{{ $usuario->email }}">
+        <input type="text" name="email_usuario" value="{{ $usuario->email }}">
       </label>
       <label for="">
         Estado:
@@ -39,12 +41,13 @@
       </label>
       <label for="">
         Hobbie:
-        <select name="" id="">
+        <select name="hobbies" id="">
           @foreach ($hobbies as $hobbie)
             <option>{{ $hobbie->hobbie }}</option>
           @endforeach
         </select>
       </label>
+      <button type="submit">Atualizar usuário</button>
     </form>
   </main>
 </body>

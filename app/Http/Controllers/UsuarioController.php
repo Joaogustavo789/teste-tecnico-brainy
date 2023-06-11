@@ -57,6 +57,17 @@ class UsuarioController extends Controller
         ]);
     }
 
+    public function updateUsuario(Request $request, $id) {
+        $usuario = Usuario::findOrFail($id);
+        $usuario->nome = $request->nome_usuario;
+        $usuario->email = $request->email_usuario;
+        $usuario->id_cidade = $request->cidades;
+        $usuario->save();
+        return view('atualizado', [
+            'usuario' => $usuario,
+        ]);
+    }
+
     public function deleteUsuario($id) {
         $usuario = Usuario::findOrFail($id);
         $usuario->delete();
