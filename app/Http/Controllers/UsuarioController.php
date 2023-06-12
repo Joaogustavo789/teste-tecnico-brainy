@@ -10,14 +10,11 @@ use Illuminate\Http\Request;
 
 class UsuarioController extends Controller
 {
-    public function postUsuario(Request $request) {
+    public function postUsuario() {
         $estados = Estado::all();
-        // $estadoId = $request->input('estado');
-        // echo $estadoId;
-        // $cidades = Cidade::where('id_estado', $estadoId)->get();
-        // echo $cidades;
         $cidades = Cidade::all();
         $hobbies = Hobbie::all();
+
         return view('home', [
             'estados' => $estados,
             'cidades' => $cidades,
@@ -39,6 +36,7 @@ class UsuarioController extends Controller
 
     public function getUsuarios() {
         $usuarios = Usuario::all();
+
         return view('usuario', [
             'usuarios' => $usuarios,
         ]);
@@ -49,6 +47,7 @@ class UsuarioController extends Controller
         $estados = Estado::all();
         $cidades = Cidade::all();
         $hobbies = Hobbie::all();
+
         return view('editar', [
             'usuario' => $usuario,
             'estados' => $estados,
@@ -63,6 +62,7 @@ class UsuarioController extends Controller
         $usuario->email = $request->email_usuario;
         $usuario->id_cidade = $request->cidades;
         $usuario->save();
+
         return view('atualizado', [
             'usuario' => $usuario,
         ]);
@@ -71,6 +71,7 @@ class UsuarioController extends Controller
     public function deleteUsuario($id) {
         $usuario = Usuario::findOrFail($id);
         $usuario->delete();
+
         return view('excluir');
     }
 }

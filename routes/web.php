@@ -1,8 +1,8 @@
 <?php
 
-use App\Http\Controllers\CidadeController;
-use App\Http\Controllers\EstadoController;
-use App\Http\Controllers\HobbieController;
+// use App\Http\Controllers\CidadeController;
+// use App\Http\Controllers\EstadoController;
+// use App\Http\Controllers\HobbieController;
 use App\Http\Controllers\UsuarioController;
 use Illuminate\Support\Facades\Route;
 
@@ -29,21 +29,12 @@ Route::put('/usuario/atualizado/{id}', [UsuarioController::class, 'updateUsuario
 
 Route::get('/usuarios/excluir/{id}', [UsuarioController::class, 'deleteUsuario'])->name('excluir');
 
-// Route::get('/', function () {
-//     return view('home');
-// });
-
 // Route::prefix('estados')->group(function () {
 //     Route::get('/', [EstadoController::class, 'getEstados'])->name('estados');
 // });
 
 // Route::prefix('cidades')->group(function () {
 //     Route::get('/', [CidadeController::class, 'getCidades']);
-// });
-
-// Route::prefix('usuarios')->group(function () {
-//     Route::get('/', [UsuarioController::class, 'getUsuarios']);
-//     Route::get('/', [UsuarioController::class, 'postUsuario']);
 // });
 
 // Route::prefix('hobbies')->group(function () {
