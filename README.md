@@ -57,8 +57,8 @@ Olá, sejam bem-vindos! Neste repositório foi construído um CRUD simples usand
 ## Variáveis de Ambiente
 <details>
     <summary>Clique para expandir</summary>
-    <br>
 
+### É necessário ter o MySQL instalado em sua maquina!
 - Será necessário renomear o arquivo <strong>.env.example</strong> para <strong>.env</strong> e altere as informações de acordo com suas configurações.
 
 ```bash
@@ -86,6 +86,11 @@ DB_PASSWORD=senha_do_banco_de_dados
  ```bash
     php artisan db:seed
  ```
+ 
+- Para resetar o banco de dados, bastar rodar o seguinte comando:
+```bash
+   php artisan migrate:reset
+```
 </details>
     
 ## Documentação
