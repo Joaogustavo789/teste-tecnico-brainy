@@ -59,7 +59,7 @@ Olá, sejam bem-vindos! Neste repositório foi construído um CRUD simples usand
     <summary>Clique para expandir</summary>
 
 ### É necessário ter o MySQL instalado em sua maquina!
-- Será necessário renomear o arquivo <strong>.env.example</strong> para <strong>.env</strong> e altere as informações de acordo com suas configurações.
+- Será preciso renomear o arquivo <strong>.env.example</strong> para <strong>.env</strong> e alterar as informações de acordo com suas configurações.
 
 ```bash
 DB_HOST=url_da_aplicação
