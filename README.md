@@ -94,6 +94,25 @@ DB_PASSWORD=senha_do_banco_de_dados
 ```
 </details>
 
+## Gerando a chave de criptografia
+<details>
+    <summary>Clique para expandir</summary>
+    
+#### A chave de criptografia é necessária para a execução da aplicação. E para gerar ela, tem duas opções.
+- Linha de comando: Para gerar por linha de comando, é necessário rodar o seguinte comando:
+```bash
+    php artisan key:generate
+```
+- Na própria aplicação: Para gerar na própria aplicação, é necessário estar com o banco de dados e o servidor ativos. Após isso, deverá aparecer algo parecido com essa imagem:
+
+![laravel1](https://github.com/Joaogustavo789/teste-tecnico-brainy/assets/99046967/938dbb7a-01ac-4eaa-81e5-ed6cf1d11d59)
+
+Basta clicar em `GENERATE APP KEY`, que deve aparecer algo parecido com essa outra imagem:
+
+![laravel2](https://github.com/Joaogustavo789/teste-tecnico-brainy/assets/99046967/cc260f2c-8e97-4372-886b-aad451afbcdd)
+
+</details>
+
 ## Uso 
 
 Após inicializar o servidor e estar com o banco de dados ativo, a aplicação estará rodando no seguinte caminho: `http://127.0.0.1:8000` ou `http://localhost:8000` e será renderizada a página `Home`. Nela se encontrará o formulário de cadastro de um novo usuário, na qual deverá ser informado nome, email, estado, cidade e um hobbie. Após inserir os dados e enviar, será redirecionado para página de Usuário Cadastrado, apresentando uma mensagem com o nome do novo usuário. Nela tem dois links, um que volta para a página Home e outra que redireciona para página de Usuários, na qual é renderizado todos os usuários criados. Cada usuário possui dois links, um de editar e outro de excluir, ao clicar no link de editar, será redirecionado para a página de edição, na qual terá um formulário com as informações salvas antes no banco de dados, assim facilitando qual informação o usuário deseja alterar. Após alterar as informações e enviar, será redirecionado para a página de Usuário Atualizado, na qual irá mostrar uma mensagem com o nome do usuário atualizado. Nela também possui dois links que volta para página Home e para página de Usuários. Já na página de Usuários, caso seja clicado no link de excluir, será redirecionado para a página de Usuário Deletado na qual irá mostrar uma mensagem confirmando a exclusão do usuário.
