@@ -1,6 +1,6 @@
 # Processo Seletivo - Brainy
 
-Olá, sejam bem-vindos! Neste repositório foi construído um CRUD simples usando o `Laravel` (Framework do PHP).  
+Olá, sejam bem-vindos! Neste repositório foi construído um CRUD simples usando o `Laravel` (Framework do PHP) e a Arquitetura MVC (`Model, View, Controller`).  
 
 ## Stack utilizada
 
