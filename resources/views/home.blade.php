@@ -9,6 +9,7 @@
 <body>
   <main>
     <header>
+      <h1>Formulário de cadastro</h1>
       <a href="{{ route('home') }}">adicionar</a>
       <a href="{{ route('usuarios') }}">listar</a>
     </header>
@@ -38,9 +39,9 @@
       </label>
       <label for="">
         Hobbie:
-        <select name="" id="">
+        <select name="hobbies" id="">
           @foreach ($hobbies as $hobbie)
-            <option>{{ $hobbie->hobbie }}</option>
+            <option value="{{ $hobbie->id }}">{{ $hobbie->hobbie }}</option>
           @endforeach
         </select>
       </label>
@@ -50,24 +51,15 @@
   <script>
     let estados = @json($estados);
     let cidades = @json($cidades);
-    // console.log(estados);
-    // console.log(cidades);
 
     function selecionaEstado() {
-      // console.log('Entrou na função selecionaEstado');
       let selectEstado = document.getElementById('id-estado').value;
-      // console.log(typeof selectEstado);
       let selectCidade = document.getElementById('id-cidade');
       selectCidade.innerHTML = '';
-      // let teste = Number(selectEstado);
-      // console.log(typeof teste);
+
       let filtraCidades = cidades.filter((cidade) => {
-        // console.log(cidade.id_estado);
-        // console.log(typeof cidade.id_estado);
-        // console.log(typeof selectEstado);
         return cidade.id_estado === Number(selectEstado);
       });
-      // console.log(filtraCidades);
 
       filtraCidades.forEach((cidade) => {
         let option = document.createElement('option');

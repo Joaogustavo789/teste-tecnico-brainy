@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string('email');
             $table->unsignedBigInteger('id_cidade');
             $table->foreign('id_cidade')->references('id')->on('cidades');
+            $table->unsignedBigInteger('id_hobbie');
+            $table->foreign('id_hobbie')->references('id')->on('hobbies');
             $table->timestamps();
         });
     }

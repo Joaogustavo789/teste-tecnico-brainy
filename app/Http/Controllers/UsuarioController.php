@@ -27,6 +27,7 @@ class UsuarioController extends Controller
             'nome' => $request->nome_usuario,
             'email' => $request->email_usuario,
             'id_cidade' => $request->cidades,
+            'id_hobbie' => $request->hobbies,
         ]);
 
         return view('cadastrado', [
@@ -61,6 +62,7 @@ class UsuarioController extends Controller
         $usuario->nome = $request->nome_usuario;
         $usuario->email = $request->email_usuario;
         $usuario->id_cidade = $request->cidades;
+        $usuario->id_hobbie = $request->hobbies;
         $usuario->save();
 
         return view('atualizado', [
