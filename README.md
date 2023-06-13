@@ -27,7 +27,7 @@ Olá, sejam bem-vindos! Neste repositório foi construído um CRUD simples usand
 <details>
     <summary>Clique para expandir</summary>
 
-  ### É necessário ter o PHP e o Composer instalados em sua maquina!
+  ### É necessário ter o PHP na versão 8.1 e o Composer instalados em sua maquina!
 
 - Clone o projeto
 
@@ -46,6 +46,8 @@ Olá, sejam bem-vindos! Neste repositório foi construído um CRUD simples usand
 ```bash
   composer install
 ```
+
+#### OBS: Caso execute o composer install e não encontre alguns drivers, é necessário ver quais drivers estão faltando e procurar as suas devidas instalações.
 
 - Inicie o servidor
 
