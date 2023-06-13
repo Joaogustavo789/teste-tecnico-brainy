@@ -99,7 +99,7 @@ DB_PASSWORD=senha_do_banco_de_dados
     <summary>Clique para expandir</summary>
     
 #### A chave de criptografia é necessária para a execução da aplicação. E para gerar ela, tem duas opções.
-- Linha de comando: Para gerar por linha de comando, é necessário rodar o seguinte comando:
+- Linha de comando: Para gerar por linha de comando, é necessário estar com o banco de dados e o servidor ativos. Após isso, basta rodar o seguinte comando:
 ```bash
     php artisan key:generate
 ```
@@ -110,6 +110,10 @@ DB_PASSWORD=senha_do_banco_de_dados
 Basta clicar em `GENERATE APP KEY`, que deve aparecer algo parecido com essa outra imagem:
 
 ![laravel2](https://github.com/Joaogustavo789/teste-tecnico-brainy/assets/99046967/cc260f2c-8e97-4372-886b-aad451afbcdd)
+    
+Provavelmente a aplicação estará rodando, igual é mostrado na seguinte imagem:
+
+![aplicação-laravel](https://github.com/Joaogustavo789/teste-tecnico-brainy/assets/99046967/7e110e21-1f3b-497d-9a99-8e2c8444a7b8)
 
 </details>
 
