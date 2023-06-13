@@ -81,7 +81,7 @@ DB_PASSWORD=senha_do_banco_de_dados
  ```bash
     php artisan migrate
  ```
-  ### OBS: Caso seja a primeira vez que é executado o comando das migrations, irá ser informado que o banco de dados não existe e pergunta se deseja criar ou não. Basta digitar `yes` que ele cria o banco.
+  ### OBS: Caso seja a primeira vez que é executado o comando das migrations, irá ser informado que o banco de dados não existe e pergunta se deseja criar ou não. Basta digitar `yes` que ele cria o banco e em seguida as migrations serão criadas.
   
  - Para executar as seeders, basta rodar o seguinte comando:
  ```bash
